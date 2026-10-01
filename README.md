@@ -49,3 +49,7 @@ I have also put a CSV file of sample data (`sample_data.csv`) with smaller inter
 or
 `python data_fetcher.py`
 
+## Data Analysis
+Data Analysis can be done using pandas and matplotlib or any other libraries, some basic data analysis operations are done in the file `analysis.py` and can be modified and further expanded according to convenience.
+
+
