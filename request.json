@@ -1,0 +1,6 @@
+{
+    "origin" : {"address" : "1600 Amphitheatre Parkway, Mountain View, CA"},
+    "destination" : {"address": "450 Serra Mall, Stanford, CA"},
+    "travelMode": "DRIVE",
+    "routingPreference": "TRAFFIC_AWARE_OPTIMAL"
+}

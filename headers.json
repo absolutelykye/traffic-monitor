@@ -1,0 +1,6 @@
+{
+    "User-Agent": "traffic-monitor",
+    "X-Goog-Api-Key" : "enter api key",
+    "Content-Type": "application/json",
+    "X-Goog-FieldMask":"routes.duration,routes.staticDuration,routes.distanceMeters"
+}
