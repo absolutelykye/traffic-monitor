@@ -9,14 +9,16 @@ Program Workflow :
 4. Then it stores the dataframe onto a CSV file.
 5. This process is repeated in a given interval (default setting is per hour)
 
-### Collecting Data
+## Collecting Data
 `request.json` file contains the data you need to provide to Routes API to get back valid readings.
+### Interval 
+Data collection interval can be changed by editing `data_fetcher.py` at line 61, namely, `time.sleep(interval in seconds)`.
 
 Example : 
 ```JSON
 { "origin": { "address": "Origin" }, "destination": { "address": "Destination" }, "travelMode": "DRIVE", "routingPreference": "TRAFFIC_AWARE" }
 ```
-### Installation 
+## Installation 
 Clone the repo :
 ```bash
 git clone https://github.com/absolutelykye/traffic-monitor
@@ -32,10 +34,10 @@ Install Dependancies :
 pip install -r requirements.txt
 ```
 
-#### API key 
+### API key 
 Put your api key in the `headers.json` file in the `"X-Goog-Api-Key" : "your key"` field.
 
-### Sample Data
+## Sample Data
 I have also put a CSV file of sample data (`sample_data.csv`) with smaller intervals and a handful of readings, you can use those inside of `analysis.py` to plot graphs with sample data.
 
 
@@ -44,3 +46,4 @@ I have also put a CSV file of sample data (`sample_data.csv`) with smaller inter
 `python3 data_fetcher.py`
 or
 `python data_fetcher.py`
+
