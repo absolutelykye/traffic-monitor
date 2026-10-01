@@ -11,13 +11,15 @@ Program Workflow :
 
 ## Collecting Data
 `request.json` file contains the data you need to provide to Routes API to get back valid readings.
-### Interval 
-Data collection interval can be changed by editing `data_fetcher.py` at line 61, namely, `time.sleep(interval in seconds)`.
 
 Example : 
 ```JSON
 { "origin": { "address": "Origin" }, "destination": { "address": "Destination" }, "travelMode": "DRIVE", "routingPreference": "TRAFFIC_AWARE" }
 ```
+### Interval 
+Data collection interval can be changed by editing `data_fetcher.py` at line 61, namely, `time.sleep(interval in seconds)`.
+
+
 ## Installation 
 Clone the repo :
 ```bash
